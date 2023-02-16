@@ -32,7 +32,7 @@ const Page = () => {
 					mb={6} 
 					align='center'
 				>
-					Hello, I'm a full-stack developer based in Malaysia!
+					Hello, I am a full-stack developer based in Malaysia!
 				</Box>
 
 				<Box display={{md:'flex'}}> 
