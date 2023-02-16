@@ -7,7 +7,7 @@ import {
 } from '@chakra-ui/react'
 import {ExternalLinkIcon} from '@chakra-ui/icons'
 import {Title, WorkImage, Meta} from  '../../components/work'
-import p from '../../components/paragraph'
+import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const Work = () => {
@@ -17,9 +17,9 @@ const Work = () => {
                 <Title>
                     Ink Drop <Badge> 2016</Badge>
                 </Title>
-                <p>
+                <P>
                     (PLACEHOLDER)
-                </p>
+                </P>
                 <List ml={4} my={4}>
                     <ListItem>
                         <Meta>Website</Meta>
