@@ -20,25 +20,26 @@ import {
 	IoLogoGithub,
 } from 'react-icons/io5'
 
+const timing=0.3
+
 const Page = () => {
 	return (
 		<Layout>
 			<Container>
 				<Box 
-					display={{md:'flex'}} 
 					borderRadius='lg' 
-					bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.100')} 
-					p={3} 
-					mb={6} 
 					align='center'
+					mb={6} 
+					p={3} 
+					bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.100')} 
 				>
-					Hello, I am a full-stack developer based in Malaysia!
+					Hey there! I&#39;m an aspiring Software Engineer based in Singapore!
 				</Box>
 
 				<Box display={{md:'flex'}}> 
 					<Box flexGrow={1}>
 					<Heading as="h2" variant="page-title">
-						Chun Khai
+						Chun Khai // CK
 					</Heading>
 					<p> Student/ Developer/ Photographer</p>
 					</Box>
@@ -59,12 +60,12 @@ const Page = () => {
 							alt="Profile Image"/>
 					</Box>
 				</Box>
-				<Section delay={0.1}>
+				<Section delay={timing}>
 					<Heading as="h3" variant="section-title">
 						Work 
 					</Heading>
 					<Paragraph>
-					Chun Khai is a freelance software developer and photographer currently studying  at the {}
+					Chun Khai is a freelance software developer and photographer currently studying Computer Science at the {}
 					<NextLink href="https://nus.edu.sg">
 						<Link>National University of Singapore</Link>
 					</NextLink>.
@@ -98,7 +99,7 @@ const Page = () => {
 						Pursuing degree in Computer Science at the National University of Singapore
 					</BioSection>
 				</Section>
-				<Section>
+				<Section delay={timing + 0.2}>
 					<Heading as="h3" variant="section-title">
 						Things I Love
 					</Heading>
@@ -106,7 +107,7 @@ const Page = () => {
 						Photography, Music (Pop and Jazz), Cooking, Totoro.
 					</Paragraph>
 				</Section>
-				<Section delay={.3}>
+				<Section delay={timing + 0.4}>
 					<Heading as='h3' variant='section-title'>
 						On the web
 					</Heading>
