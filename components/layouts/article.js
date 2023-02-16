@@ -18,9 +18,11 @@ const Layout = ({children, title}) => (
         style={{position:'relative'}}
     >
         <>
-        {title && (<Head>
-            <title>{title} - Chun Khai</title>
-        </Head>)}
+        {title && (
+            <Head>
+                <title>{title} - Chun Khai</title>
+            </Head>
+        )}
         {children}
         <GridItemStyle/>
         </>
