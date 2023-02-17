@@ -9,7 +9,8 @@ import {
 	Icon,
 	List,
 	useColorModeValue,
-	ListItem} from '@chakra-ui/react'
+	ListItem,
+	useColorMode} from '@chakra-ui/react'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { ChevronRightIcon } from '@chakra-ui/icons'
@@ -38,15 +39,15 @@ const Page = () => {
 					<NoSsr>
 						<VoxelDog />
 					</NoSsr>
-						<Box 
-							borderRadius='lg' 
-							align='center'
-							mb={6} 
-							p={3} 
-							bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.100')} 
-						>
-							Hey there! I&#39;m an aspiring Software Engineer based in Singapore!
-						</Box>
+					<Box 
+						borderRadius='lg' 
+						align='center'
+						mb={6} 
+						p={3} 
+						bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.100')} 
+					>
+						Hey there! I&#39;m an aspiring Software Engineer based in Singapore!
+					</Box>
 				</Section>
 
 				<Section delay={timing + 0.2}>
@@ -88,7 +89,7 @@ const Page = () => {
 					</Paragraph>
 					<Box align="center" my={4}>
 						<NextLink href="/works">
-							<Button rightIcon={<ChevronRightIcon/>} colorScheme="teal"> 
+							<Button rightIcon={<ChevronRightIcon/>} colorScheme={useColorModeValue("teal", "orange")}> 
 								My portfolio
 							</Button>
 						</NextLink>

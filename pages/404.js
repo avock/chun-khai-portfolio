@@ -7,10 +7,15 @@ import {
     Button, 
     Text
 } from '@chakra-ui/react'
+import VoxelDog from '../components/voxel-dog'
+import NoSsr from '../components/no-ssr'
 
 const NotFound = () => {
-    return (
+    return (   
         <Container>
+            <NoSsr>
+                <VoxelDog />
+            </NoSsr> 
             <Heading as="h1">
                 Not Found
             </Heading>
