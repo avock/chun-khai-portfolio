@@ -6,7 +6,7 @@ import {
     ListItem
 } from '@chakra-ui/react'
 import {ExternalLinkIcon} from '@chakra-ui/icons'
-import {Title, PhotographyImage, Meta} from  '../../components/photography'
+import {Title, Meta, PhotographyImage} from '../../components/projectDisplay'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
@@ -14,8 +14,8 @@ const Photography = () => {
     return (
         <Layout title="Inkdrop">
             <Container>
-                <Title>
-                    Ink Drop <Badge> 2016</Badge>
+                <Title mt={8} mb={4} pageType="Photography"> 
+                    THAIPUSAM <Badge> 2016</Badge>
                 </Title>
                 <P>
                     (PLACEHOLDER)

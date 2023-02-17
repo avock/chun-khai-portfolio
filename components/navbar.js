@@ -3,6 +3,7 @@ import NextLink from 'next/link'
 import { 
     Container,
     Box,
+    Button,
     Link,
     Stack,
     Heading,
@@ -21,11 +22,14 @@ const LinkItem = ({href, path, children}) => {
     const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
     return (
         <NextLink href={href}>
-            <Link   p={2} 
-                    bg={active? 'glassTeal': undefined } 
-                    color={active? '#202023': inactiveColor} >
+            <Button
+                as={active? 'u': null}
+                // color={active? useColorModeValue('', 'black') : ''}
+                // bg={active? useColorModeValue('#02b5b5', '#e89b35') : ''}
+                bg={''}
+                >
                 {children}
-            </Link>
+            </Button>
         </NextLink>
     )
 }
@@ -62,15 +66,15 @@ const Navbar = props => {
                         alignItems="center"
                         flexGrow={1}
                         mt={{base:4, md:2}}
-                    >
-                            <LinkItem href="/works" path={path}>
-                                Works
+                    >       
+                            <LinkItem href="/aboutMe" path={path}>
+                                About Me
+                            </LinkItem>
+                            <LinkItem href="/coding" path={path}>
+                                Coding
                             </LinkItem>
                             <LinkItem href="/photography" path={path}>
-                                Photography Projects
-                            </LinkItem>
-                            <LinkItem href="/projects" path={path}>
-                                Projects
+                                Photography
                             </LinkItem>
                     </Stack>
                     <Box flex={1} align="right">
@@ -83,14 +87,14 @@ const Navbar = props => {
                                     variant="outline" 
                                     aria-label="Options" />
                                 <MenuList>
-                                    <NextLink href="/" passHref>
+                                    <NextLink href="/aboutMe" passHref>
                                         <MenuItem as={Link}>
                                             About Me
                                         </MenuItem>
                                     </NextLink>
-                                    <NextLink href="/works" passHref>
+                                    <NextLink href="/coding" passHref>
                                         <MenuItem as={Link}>
-                                            Works
+                                            Coding
                                         </MenuItem>
                                     </NextLink>
                                     <NextLink href="/photography" passHref>

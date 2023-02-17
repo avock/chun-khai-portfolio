@@ -9,9 +9,9 @@ import {
 import { ChevronRightIcon } from '@chakra-ui/icons'
 
 export const Title = ({children}) => (
-    <Box>
-        <NextLink href="/works">
-            <Link>Works</Link>
+    <Box mt={'2'}>
+        <NextLink href="/coding">
+            <Link>Coding</Link>
         </NextLink>
         <span>
         &nbsp;
@@ -24,7 +24,7 @@ export const Title = ({children}) => (
     </Box>
 )
 
-export const WorkImage = ({src, alt}) => (
+export const CodingImage = ({src, alt}) => (
     <Image borderRadius="lg" w='full' src={src} alt={alt} mb={4} />
 )
 
