@@ -14,7 +14,6 @@ import {
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { ChevronRightIcon } from '@chakra-ui/icons'
-import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import {
 	IoLogoInstagram,
@@ -79,50 +78,21 @@ const Page = () => {
 
 				<Section delay={timing + 0.4}>
 					<Heading as="h3" variant="section-title">
-						Work 
+						Coding 
 					</Heading>
 					<Paragraph>
 					Chun Khai is a freelance software developer and photographer currently studying Computer Science at the {}
 					<NextLink href="https://nus.edu.sg">
 						<Link>National University of Singapore</Link>
-					</NextLink>.
+					</NextLink>. He enjoys cooking and coffee brewing in his free time.
 					</Paragraph>
 					<Box align="center" my={4}>
-						<NextLink href="/works">
+						<NextLink href="/coding">
 							<Button rightIcon={<ChevronRightIcon/>} colorScheme={useColorModeValue("teal", "orange")}> 
 								My portfolio
 							</Button>
 						</NextLink>
 					</Box>					
-				</Section>
-				<Section delay={timing + 0.6}>
-					<Heading as="h3" variant="section-title">
-						Bio
-					</Heading>
-					<BioSection>
-						<BioYear>2018</BioYear>
-						Completed High School at Chung Ling High School (锺灵中学)
-					</BioSection>
-					<BioSection>
-						<BioYear>2020</BioYear>
-						Completed Pre-University at Methodist College Kuala Lumpur
-					</BioSection>
-					<BioSection>
-						<BioYear>2017 to present</BioYear>
-						Works as a freelance photographer and videographer
-					</BioSection>
-					<BioSection>
-						<BioYear>2021 to present</BioYear>
-						Pursuing degree in Computer Science at the National University of Singapore
-					</BioSection>
-				</Section>
-				<Section delay={timing + 0.8}>
-					<Heading as="h3" variant="section-title">
-						Things I Love
-					</Heading>
-					<Paragraph>
-						Photography, Music (Pop and Jazz), Cooking, Totoro.
-					</Paragraph>
 				</Section>
 				<Section delay={timing + 1.0}>
 					<Heading as='h3' variant='section-title'>

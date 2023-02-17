@@ -8,20 +8,24 @@ import {
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 
-export const Title = ({children}) => (
+export const Title = ({children, pageType}) => (
     <Box mt={'2'}>
-        <NextLink href="/photography">
-            <Link>Photography Projects</Link>
+        <NextLink href={"/" + pageType}>
+            <Link>{pageType}</Link>
         </NextLink>
         <span>
-        &nbsp;
-        <ChevronRightIcon />
-        &nbsp;
-    </span>
-    <Heading display='inline-block' as='h3' fontSize={20} mb={4}>
-        {children}
-    </Heading>
+            &nbsp;
+            <ChevronRightIcon />
+            &nbsp;
+         </span>
+        <Heading display='inline-block' as='h3' fontSize={20} mb={4}>
+            {children}
+        </Heading>
     </Box>
+)
+
+export const CodingImage = ({src, alt}) => (
+    <Image borderRadius="lg" w='full' src={src} alt={alt} mb={4} />
 )
 
 export const PhotographyImage = ({src, alt}) => (

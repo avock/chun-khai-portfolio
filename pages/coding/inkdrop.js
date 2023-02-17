@@ -6,15 +6,15 @@ import {
     ListItem
 } from '@chakra-ui/react'
 import {ExternalLinkIcon} from '@chakra-ui/icons'
-import {Title, WorkImage, Meta} from  '../../components/work'
+import {Title, Meta, CodingImage} from  '../../components/projectDisplay'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
-const Work = () => {
+const Coding = () => {
     return (
-        <Layout title="Inkdrop">
+        <Layout title="Inkdrop" mt={8} mb={4}>
             <Container>
-                <Title>
+                <Title pageType='Coding'>
                     Ink Drop <Badge> 2016</Badge>
                 </Title>
                 <P>
@@ -42,11 +42,11 @@ const Work = () => {
                         </Link>
                     </ListItem>
                 </List>
-                <WorkImage src="/images/works/inkdrop_01.png" alt="Inkdrop" />
-                <WorkImage src="/images/works/inkdrop_02.png" alt="Inkdrop" />
+                <CodingImage src="/images/works/inkdrop_01.png" alt="Inkdrop" />
+                <CodingImage src="/images/works/inkdrop_02.png" alt="Inkdrop" />
             </Container>
         </Layout>
     )
 }
 
-export default Work
+export default Coding

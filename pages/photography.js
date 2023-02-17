@@ -6,7 +6,6 @@ import {
 import Section from '../components/section'
 import { PhotographyGridItem} from '../components/grid-item'
 import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
-import thumbWalknote from '../public/images/works/walknote_eyecatch.png'
 import Layout from '../components/layouts/article'
 
 const Photography = () => {
