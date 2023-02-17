@@ -25,6 +25,8 @@ import {
 import {
 	BsTelegram
 } from 'react-icons/bs'
+import VoxelDog from '../components/voxel-dog'
+import NoSsr from '../components/no-ssr'
 
 const timing=0.3
 
@@ -32,41 +34,49 @@ const Page = () => {
 	return (
 		<Layout>
 			<Container>
-				<Box 
-					borderRadius='lg' 
-					align='center'
-					mb={6} 
-					p={3} 
-					bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.100')} 
-				>
-					Hey there! I&#39;m an aspiring Software Engineer based in Singapore!
-				</Box>
-
-				<Box display={{md:'flex'}}> 
-					<Box flexGrow={1}>
-					<Heading as="h2" variant="page-title">
-						Chun Khai // CK
-					</Heading>
-					<p> Student/ Developer/ Photographer</p>
-					</Box>
-					<Box 
-						flexShrink={0} 
-						mt={{base:4, md:0}} 
-						ml={{md:6}}
-						align="center"
-					>
-						<Image
-							borderColor="whiteAlpha.800" 
-							borderWidth={2} 
-							borderStyle="solid" 
-							maxWidth="100px" 
-							display="inline-block" 
-							borderRadius="full" 
-							src="/images/profile_picture.jpg"
-							alt="Profile Image"/>
-					</Box>
-				</Box>
 				<Section delay={timing}>
+					<NoSsr>
+						<VoxelDog />
+					</NoSsr>
+						<Box 
+							borderRadius='lg' 
+							align='center'
+							mb={6} 
+							p={3} 
+							bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.100')} 
+						>
+							Hey there! I&#39;m an aspiring Software Engineer based in Singapore!
+						</Box>
+				</Section>
+
+				<Section delay={timing + 0.2}>
+					<Box display={{md:'flex'}}> 
+						<Box flexGrow={1}>
+						<Heading as="h2" variant="page-title">
+							Chun Khai // CK
+						</Heading>
+						<p> Student/ Developer/ Photographer</p>
+						</Box>
+						<Box 
+							flexShrink={0} 
+							mt={{base:4, md:0}} 
+							ml={{md:6}}
+							align="center"
+						>
+							<Image
+								borderColor="whiteAlpha.800" 
+								borderWidth={2} 
+								borderStyle="solid" 
+								maxWidth="100px" 
+								display="inline-block" 
+								borderRadius="full" 
+								src="/images/profile_picture.jpg"
+								alt="Profile Image"/>
+						</Box>
+					</Box>
+				</Section>
+
+				<Section delay={timing + 0.4}>
 					<Heading as="h3" variant="section-title">
 						Work 
 					</Heading>
@@ -84,7 +94,7 @@ const Page = () => {
 						</NextLink>
 					</Box>					
 				</Section>
-				<Section delay={0.2}>
+				<Section delay={timing + 0.6}>
 					<Heading as="h3" variant="section-title">
 						Bio
 					</Heading>
@@ -105,7 +115,7 @@ const Page = () => {
 						Pursuing degree in Computer Science at the National University of Singapore
 					</BioSection>
 				</Section>
-				<Section delay={timing + 0.2}>
+				<Section delay={timing + 0.8}>
 					<Heading as="h3" variant="section-title">
 						Things I Love
 					</Heading>
@@ -113,7 +123,7 @@ const Page = () => {
 						Photography, Music (Pop and Jazz), Cooking, Totoro.
 					</Paragraph>
 				</Section>
-				<Section delay={timing + 0.4}>
+				<Section delay={timing + 1.0}>
 					<Heading as='h3' variant='section-title'>
 						Get In Touch
 					</Heading>
@@ -121,14 +131,14 @@ const Page = () => {
 						<ListItem>
 							<Link href='https://github.com/avock' target="_blank">
 								<Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoGithub}/>}>
-								avock
+								Github
 								</Button>
 							</Link>
 						</ListItem>
 						<ListItem>
 							<Link href='https://instagram.com/chunkhaik' target="_blank">
 								<Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoInstagram}/>}>
-								chunkhaik
+								Instagram
 								</Button>
 							</Link>
 						</ListItem>
@@ -136,13 +146,13 @@ const Page = () => {
 						<ListItem>
 							<Link href='https://t.me/chunkhaik' target="_blank">
 								<Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={BsTelegram}/>}>
-								chunkhaik
+								Telegram
 								</Button>
 							</Link>
 						</ListItem>
 							<Link href='mailto:chunkhai.k@gmail.com' target="_blank">
 								<Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoIosMail}/>}>
-								chunkhai.k@gmail.com
+								Email
 								</Button>
 							</Link>
 						</ListItem>
