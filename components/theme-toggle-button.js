@@ -5,7 +5,7 @@ import {AnimatePresence, motion} from 'framer-motion'
 const ThemeToggleButton = () => {
     const {toggleColorMode} = useColorMode()
     return (
-        <AnimatePresence exitBeforeEnter initial={false}>
+        <AnimatePresence mode='wait' initial={false}>
             <motion.div 
                 style={{display: 'inline-block'}}
                 key={useColorModeValue('light', 'dark')}
@@ -15,7 +15,7 @@ const ThemeToggleButton = () => {
                 transition={{duration: 0.2}}
                 >
                 <IconButton aria-label="Toggle theme"
-                    colorScheme={useColorModeValue('purple', 'orange')}
+                    colorScheme={useColorModeValue('Blue', 'orange')}
                     icon={useColorModeValue(<MoonIcon/>, <SunIcon/>)}
                     onClick={toggleColorMode}
                 ></IconButton>

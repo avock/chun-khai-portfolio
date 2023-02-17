@@ -19,6 +19,12 @@ import {
 	IoLogoInstagram,
 	IoLogoGithub,
 } from 'react-icons/io5'
+import {
+	IoIosMail
+} from 'react-icons/io'
+import {
+	BsTelegram
+} from 'react-icons/bs'
 
 const timing=0.3
 
@@ -109,7 +115,7 @@ const Page = () => {
 				</Section>
 				<Section delay={timing + 0.4}>
 					<Heading as='h3' variant='section-title'>
-						On the web
+						Get In Touch
 					</Heading>
 					<List>
 						<ListItem>
@@ -123,6 +129,20 @@ const Page = () => {
 							<Link href='https://instagram.com/chunkhaik' target="_blank">
 								<Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoInstagram}/>}>
 								chunkhaik
+								</Button>
+							</Link>
+						</ListItem>
+						<ListItem>
+						<ListItem>
+							<Link href='https://t.me/chunkhaik' target="_blank">
+								<Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={BsTelegram}/>}>
+								chunkhaik
+								</Button>
+							</Link>
+						</ListItem>
+							<Link href='mailto:chunkhai.k@gmail.com' target="_blank">
+								<Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoIosMail}/>}>
+								chunkhai.k@gmail.com
 								</Button>
 							</Link>
 						</ListItem>
