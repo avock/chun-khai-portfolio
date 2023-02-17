@@ -10,7 +10,7 @@ import {
 	List,
 	useColorModeValue,
 	ListItem,
-	useColorMode} from '@chakra-ui/react'
+	} from '@chakra-ui/react'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { ChevronRightIcon } from '@chakra-ui/icons'
