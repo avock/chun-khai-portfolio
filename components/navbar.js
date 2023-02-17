@@ -67,7 +67,7 @@ const Navbar = props => {
                                 Works
                             </LinkItem>
                             <LinkItem href="/photography" path={path}>
-                                Photography
+                                Photography Projects
                             </LinkItem>
                             <LinkItem href="/projects" path={path}>
                                 Projects
@@ -96,11 +96,6 @@ const Navbar = props => {
                                     <NextLink href="/photography" passHref>
                                         <MenuItem as={Link}>
                                             Photography
-                                        </MenuItem>
-                                    </NextLink>
-                                    <NextLink href="/posts" passHref>
-                                        <MenuItem as={Link}>
-                                            Posts
                                         </MenuItem>
                                     </NextLink>
                                     <MenuItem as={Link} href="https://github.com/avock/chun-khai-portfolio">

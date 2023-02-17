@@ -44,6 +44,24 @@ export const WorkGridItem = ({children, id, title, thumbnail}) => (
     </Box>
 )
 
+export const PhotographyGridItem = ({children, id, title, thumbnail}) => (
+    <Box w="100%" align="center">
+        <NextLink href={`/photography/${id}`}>
+            <LinkBox cursor="pointer">
+                <Image src={thumbnail} alt={title} classname="grid-item-thumbnail" placeholder="blur" />
+                <LinkOverlay href={`/photography/${id}`}>
+                    <Text mt={2} fontSize={20}>
+                        {title}
+                    </Text>
+                </LinkOverlay>
+                <Text fontSize={14}>
+                    {children}
+                </Text>
+            </LinkBox>
+        </NextLink>
+    </Box>
+)
+
 export const GridItemStyle = () => (
     <Global styles={`
         .grid-item-thumbnail {

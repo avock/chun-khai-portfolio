@@ -35,7 +35,7 @@ const Works = () => {
                     </Section>
                     <Section>
                         <WorkGridItem id="walknote" title="Walknote" thumbnail={thumbWalknote}>
-                            (DUMMY PLACE HOLDER FOR NOW)
+                            (DUMMY PLACE HOLDEzR FOR NOW)
                         </WorkGridItem>
                     </Section>
                 </SimpleGrid>
