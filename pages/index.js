@@ -27,6 +27,7 @@ import {
 } from 'react-icons/bs'
 import VoxelDog from '../components/voxel-dog'
 import NoSsr from '../components/no-ssr'
+import Typewriter from '../components/typeWriter'
 
 const timing=0.3
 
@@ -55,7 +56,9 @@ const Page = () => {
 						<Heading as="h2" variant="page-title">
 							Chun Khai // CK
 						</Heading>
-						<p> Student/ Developer/ Photographer</p>
+						<Typewriter 
+							fixedWords={"I am a "}
+							words={['student', 'programmer', 'photographer', 'coffee lover']} />
 						</Box>
 						<Box 
 							flexShrink={0} 
