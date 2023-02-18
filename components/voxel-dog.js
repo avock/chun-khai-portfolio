@@ -28,8 +28,8 @@ const VoxelDog = () => {
   useEffect(() => {
     const { current: container } = refContainer
     if (container) {
-      const scW = container.clientWidth
-      const scH = container.clientHeight
+      const scH = 400;
+      const scW = 400;
 
       const renderer = new THREE.WebGLRenderer({
         antialias: true,
