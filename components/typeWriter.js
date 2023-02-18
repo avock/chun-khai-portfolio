@@ -13,7 +13,7 @@ const Typewriter = ({ fixedWords, words }) => {
       const currentWord = words[currentIndex];
       const typeSpeed = 100;
       const deleteSpeed = 80;
-      const pauseTime = 800;
+      const pauseTime = 810;
 
       if (isTyping) {
         setCurrentWord((prevWord) => {
