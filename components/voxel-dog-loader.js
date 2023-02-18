@@ -22,7 +22,6 @@ export const DogContainer = forwardRef(({ children }, ref) => (
       w={[200, 275, 350]}
       h={[200, 275, 350]}
       position="relative"
-      background={'red'}
     >
       {children}
     </Box>
