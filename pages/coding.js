@@ -28,16 +28,6 @@ const Coding = () => {
                             (DUMMY PLACE HOLDER FOR NOW)
                         </CodingGridItem>
                     </Section>
-                    <Section>
-                        <CodingGridItem id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>
-                            (DUMMY PLACE HOLDER FOR NOW)
-                        </CodingGridItem>
-                    </Section>
-                    <Section>
-                        <CodingGridItem id="walknote" title="Walknote" thumbnail={thumbWalknote}>
-                            (DUMMY PLACE HOLDEzR FOR NOW)
-                        </CodingGridItem>
-                    </Section>
                 </SimpleGrid>
             </Container>
         </Layout>

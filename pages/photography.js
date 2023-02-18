@@ -22,6 +22,11 @@ const Photography = () => {
                             (DUMMY PLACE HOLDER FOR NOW)
                         </PhotographyGridItem>
                     </Section>
+                    <Section>
+                        <PhotographyGridItem id="thaipusam" title="Thaipusam" thumbnail={thumbInkdrop}>
+                            (DUMMY PLACE HOLDER FOR NOW)
+                        </PhotographyGridItem>
+                    </Section>
                 </SimpleGrid>
             </Container>
         </Layout>
