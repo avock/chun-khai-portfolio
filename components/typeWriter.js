@@ -1,4 +1,3 @@
-import { color } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
 
 const Typewriter = ({ fixedWords, words }) => {
