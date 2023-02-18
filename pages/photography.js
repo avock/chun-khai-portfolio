@@ -19,7 +19,7 @@ const Photography = () => {
                 <SimpleGrid columns={[1, 1, 1]} gap={6}>
                     <Section>
                         <PhotographyGridItem id="thaipusam" title="Thaipusam" thumbnail={thumbInkdrop}>
-                            (DUMMY PLACE HOLDER FOR NOW)
+                            
                         </PhotographyGridItem>
                     </Section>
                     <Section>

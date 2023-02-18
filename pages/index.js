@@ -36,18 +36,20 @@ const Page = () => {
 		<Layout>
 			<Container>
 				<Section delay={timing}>
-					<NoSsr>
-						<VoxelDog />
-					</NoSsr>
-					<Box 
-						borderRadius='lg' 
-						align='center'
-						mb={6} 
-						p={3} 
-						bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.100')} 
-					>
-						Hey there! I&#39;m an aspiring Software Engineer based in Singapore!
-					</Box>
+					<Container align="center">
+						<NoSsr>
+							<VoxelDog />
+						</NoSsr>
+						<Box 
+							borderRadius='lg' 
+							align='center'
+							mb={6} 
+							p={3} 
+							bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.100')} 
+						>
+							Hey there! I&#39;m an aspiring Software Engineer based in Singapore!🇸🇬
+						</Box>
+					</Container>
 				</Section>
 
 				<Section delay={timing + 0.2}>
@@ -90,13 +92,26 @@ const Page = () => {
 					</NextLink>. He enjoys cooking and coffee brewing in his free time.
 					</Paragraph>
 					<Box align="center" my={4}>
-						<NextLink href="/coding">
+						<NextLink href="/aboutMe">
 							<Button rightIcon={<ChevronRightIcon/>} colorScheme={useColorModeValue("teal", "orange")}> 
-								My portfolio
+								More about me!
 							</Button>
 						</NextLink>
 					</Box>					
 				</Section>
+
+				<Section delay={timing + 0.4}>
+					<Heading as="h3" variant="section-title">
+						Teach Stack 
+					</Heading>
+					<Paragraph>
+					Chun Khai is a freelance software developer and photographer currently studying Computer Science at the {}
+					<NextLink href="https://nus.edu.sg">
+						<Link>National University of Singapore</Link>
+					</NextLink>. He enjoys cooking and coffee brewing in his free time.
+					</Paragraph>				
+				</Section>
+
 				<Section delay={timing + 1.0}>
 					<Heading as='h3' variant='section-title'>
 						Get In Touch
