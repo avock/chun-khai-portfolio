@@ -67,14 +67,14 @@ const Navbar = props => {
                         mt={{base:4, md:2}}
                     >       
                             <LinkItem href="/aboutMe" path={path}>
-                                About Me
+                                About
                             </LinkItem>
-                            <LinkItem href="/coding" path={path}>
+                            {/* <LinkItem href="/coding" path={path}>
                                 Coding
                             </LinkItem>
                             <LinkItem href="/photography" path={path}>
                                 Photography
-                            </LinkItem>
+                            </LinkItem> */}
                     </Stack>
                     <Box flex={1} align="right">
                         <ThemeToggleButton />
@@ -88,10 +88,10 @@ const Navbar = props => {
                                 <MenuList>
                                     <NextLink href="/aboutMe" passHref>
                                         <MenuItem as={Link}>
-                                            About Me
+                                            About
                                         </MenuItem>
                                     </NextLink>
-                                    <NextLink href="/coding" passHref>
+                                    {/* <NextLink href="/coding" passHref>
                                         <MenuItem as={Link}>
                                             Coding
                                         </MenuItem>
@@ -103,7 +103,7 @@ const Navbar = props => {
                                     </NextLink>
                                     <MenuItem as={Link} href="https://github.com/avock/chun-khai-portfolio">
                                         View Source
-                                    </MenuItem>
+                                    </MenuItem> */}
                                 </MenuList>
                             </Menu>
                         </Box>
