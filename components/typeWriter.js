@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useColorMode, useColorModeValue } from '@chakra-ui/react'
+import { useColorModeValue } from '@chakra-ui/react'
 
 const Typewriter = ({ fixedWords, words }) => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
@@ -54,7 +54,6 @@ const Typewriter = ({ fixedWords, words }) => {
   }, [currentWord, currentWordIndex, isTyping, isDeleting, words, typingSpeed]);
 
   const cursor = isTyping || isDeleting ? "|" : "";
-  const {toggleColorMode} = useColorMode()
   const textColor = useColorModeValue('teal', 'orange');
 
   return (
