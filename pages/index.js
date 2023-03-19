@@ -28,6 +28,7 @@ import {
 import VoxelDog from '../components/voxel-dog'
 import NoSsr from '../components/no-ssr'
 import Typewriter from '../components/typeWriter'
+import TechStackBar from '../components/techStack'
 
 const timing=0.3
 
@@ -102,14 +103,9 @@ const Page = () => {
 
 				<Section delay={timing + 0.4}>
 					<Heading as="h3" variant="section-title">
-						Teach Stack 
+						Tech Stack 
 					</Heading>
-					<Paragraph>
-					Chun Khai is a freelance software developer and photographer currently studying Computer Science at the {}
-					<NextLink href="https://nus.edu.sg">
-						<Link>National University of Singapore</Link>
-					</NextLink>. He enjoys cooking and coffee brewing in his free time.
-					</Paragraph>				
+					<TechStackBar />	
 				</Section>
 
 				<Section delay={timing + 1.0}>

@@ -44,6 +44,14 @@ const Page = () => {
 						Photography, Music (Pop and Jazz), Cooking, Totoro.
 					</Paragraph>
 				</Section>
+				<Section delay={timing + 0.6}>
+					<Heading as="h3" variant="section-title">
+						More to come....
+					</Heading>
+					<Paragraph>
+						Will update this section in the future!
+					</Paragraph>
+				</Section>
 			</Container>
 		</Layout>
 	)
