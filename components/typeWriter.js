@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useColorMode, useColorModeValue } from '@chakra-ui/react'
 
 const Typewriter = ({ fixedWords, words }) => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
@@ -53,11 +54,13 @@ const Typewriter = ({ fixedWords, words }) => {
   }, [currentWord, currentWordIndex, isTyping, isDeleting, words, typingSpeed]);
 
   const cursor = isTyping || isDeleting ? "|" : "";
+  const {toggleColorMode} = useColorMode()
+  const textColor = useColorModeValue('teal', 'orange');
 
   return (
     <span style={{fontSize: "20px", color:"grey" }}>
       {fixedWords}
-      <span style={{color: "#e3a02d"}}>
+      <span style={{color: textColor}}>
       {currentWord}
       </span>
       <span style={{}}>{cursor}</span>
